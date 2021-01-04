@@ -1,0 +1,82 @@
+<form (ngSubmit)="addEnvoi(donnees)" #donnees="ngForm" method="POST">
+    <div class="container">
+        <fieldset class="form-field col-lg-6">
+
+            <div>
+                <h2>Ajouter un Emetteur</h2>
+            </div>
+
+            <div class=" form-group col-sm-4 col-md-4 col-lg-6">
+                <label>Nom Emetteur</label>
+                <input type="text" [(ngModel)]="newEnvoi.emetteur.nomE" name="nomE" class="form-control">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Prenom Emetteur</label>
+                <input type="text" [(ngModel)]="newEnvoi.emetteur.prenomE" name="prenomE" class="form-control">
+            </div>
+
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Telephone</label>
+                <input type="text" [(ngModel)]="newEnvoi.emetteur.telephone" name="Telephone" class="form-control">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>CNI</label>
+                <input type="text" [(ngModel)]="newEnvoi.emetteur.cni" name="cni" class="form-control">
+            </div>
+
+        </fieldset>
+
+        <fieldset class="form-field col-lg-6">
+            <div>
+                <h2>Ajouter un Recepteur</h2>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Nom Recepteur</label>
+                <input type="text" [(ngModel)]="newEnvoi.recepteur.nomR" name="nomR" class="form-control">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Prenom Recepteur</label>
+                <input type="text" [(ngModel)]="newEnvoi.recepteur.prenomR" name="prenomR" class="form-control">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Telephone</label>
+                <input type="text" [(ngModel)]="newEnvoi.recepteur.telR" name="telR" class="form-control">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>CNI</label>
+                <input type="text" [(ngModel)]="newEnvoi.recepteur.cni" name="cni" class="form-control">
+            </div>
+
+        </fieldset>
+
+        <fieldset class="form-field col-lg-6">
+            <div>
+                <h2>Envoi</h2>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Montant</label>
+                <input type="text" [(ngModel)]="newEnvoi.montant" name="montant" class="form-control">
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-6">
+                <label>Date</label>
+                <input type="text" [(ngModel)]="newEnvoi.dateenvoi" name="dateenvoi" class="form-control">
+            </div>
+            <div></div><br>
+        </fieldset>
+
+
+        <div class="form-group">
+            <button type="submit" class="btn-btnsuccess">Ajouter</button>
+        </div><br>
+
+    </div>
+</form>

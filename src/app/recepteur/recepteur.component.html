@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>NomR</th>
+                        <th>PrenomR</th>
+                        <th>Telephone</th>
+                        <th>CNI</th>
+                      
+                    </tr>
+                    <tr>
+                        <th>Liste recepteurs</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor=" let recepteur of recepteurs">
+                    <tr>
+                        <td>{{ recepteur.idR }}</td>
+                        <td>{{ recepteur.nomR }}</td>
+                        <td>{{ recepteur.prenomR }}</td>
+                        <td>{{ recepteur.telR }}</td>
+                        <td>{{ recepteur.cni }}</td>
+                      
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

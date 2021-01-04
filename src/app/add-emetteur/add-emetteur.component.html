@@ -1,0 +1,33 @@
+<div class="container">
+<div>
+    <h2>Ajouter un Emetteur</h2>
+</div>
+<form (ngSubmit)="addEmetteur(donnees)" #donnees="ngForm" method="POST">
+
+<div class="col-sm-4 col-md-4 col-lg-4"> 
+    <label>Nom Emetteur</label> 
+    <input type="text" [(ngModel)]="newEmetteur.nomE" name="nomE" class="form-control" >
+    </div>
+
+<div class="col-sm-4 col-md-4 col-lg-4"> 
+    <label>Prenom Emetteur</label> 
+    <input type="text" [(ngModel)]="newEmetteur.prenomE" name="prenomE" class="form-control" >
+    </div>
+
+
+<div class="col-sm-4 col-md-4 col-lg-4"> 
+    <label>Telephone</label> 
+    <input type="text" [(ngModel)]="newEmetteur.telephone" name="Telephone" class="form-control" >
+    </div>
+
+
+<div class="col-sm-4 col-md-4 col-lg-4"> 
+    <label>CNI</label> 
+    <input type="text" [(ngModel)]="newEmetteur.cni" name="cni" class="form-control" >
+</div>
+  
+<div class="mt-2"> 
+<button type="submit"  class="btn-btnsuccess">Ajouter</button>
+</div> 
+</form>
+</div>

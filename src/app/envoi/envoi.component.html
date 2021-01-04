@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Telephone</th>
+                        <th>CNI</th>
+                    </tr>
+                    <tr>
+                        <th>Liste d'emetteurs</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let emetteur of emetteurs">
+                    <tr>
+                        <td>{{ emetteur.idE }}</td>
+                        <td>{{ emetteur.nomE }}</td>
+                        <td>{{ emetteur.prenomE }}</td>
+                        <td>{{ emetteur.telephone }}</td>
+                        <td>{{ emetteur.cni }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>NomR</th>
+                        <th>PrenomR</th>
+                        <th>Telephone</th>
+                        <th>CNI</th>
+                      
+                    </tr>
+                    <tr>
+                        <th>Liste recepteurs</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let recepteur of recepteurs">
+                    <tr>
+                        <td>{{ recepteur.idR }}</td>
+                        <td>{{ recepteur.nomR }}</td>
+                        <td>{{ recepteur.prenomR }}</td>
+                        <td>{{ recepteur.telR }}</td>
+                        <td>{{ recepteur.cni }}</td>
+                      
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Date</th>
+                        <th>Montant</th>
+                       
+                    </tr>
+                    <tr>
+                        <th>Liste des envois</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let envoi of envois">
+                    <tr>
+                        <td>{{ envoi.id }}</td>
+                        <td>{{ envoi.dateenvoi }}</td>
+                        <td>{{ envoi.montant }}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+

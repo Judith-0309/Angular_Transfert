@@ -1,0 +1,36 @@
+<div class="container">
+    <div>
+        <h2>Ajouter un Recepteur</h2>
+    </div>
+        <form (ngSubmit)="addRecepteur(donnees)" #donnees="ngForm" method="POST">
+    <div class="col-sm-2 col-md-2 col-lg-2"> 
+        <label>ID Recepteur</label> 
+        <input type="text" [(ngModel)]="newRecepteur.idR" name="idR" class="form-control" >
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4"> 
+        <label>Nom Recepteur</label> 
+        <input type="text" [(ngModel)]="newRecepteur.nomR" name="nomR" class="form-control" >
+        </div>
+    
+    <div class="col-sm-4 col-md-4 col-lg-4"> 
+        <label>Prenom Recepteur</label> 
+        <input type="text" [(ngModel)]="newRecepteur.prenomR" name="prenomR" class="form-control" >
+        </div>
+    
+    
+    <div class="col-sm-4 col-md-4 col-lg-4"> 
+        <label>Telephone</label> 
+        <input type="text" [(ngModel)]="newRecepteur.telR" name="telR" class="form-control" >
+        </div>
+    
+        <div class="col-sm-4 col-md-4 col-lg-4"> 
+            <label>CNI</label> 
+            <input type="text" [(ngModel)]="newRecepteur.cni" name="cni" class="form-control" >
+        </div>
+   
+        
+    <!-- <div class="mt-2"> -->
+    <button type="submit"  class="btn-btnsuccess">Ajouter</button>
+    <!-- </div> -->
+    </form>
+    </div>

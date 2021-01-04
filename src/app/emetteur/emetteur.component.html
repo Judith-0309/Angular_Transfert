@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Telephone</th>
+                        <th>CNI</th>
+                    </tr>
+                    <tr>
+                        <th>Liste d'emetteurs</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor=" let emetteur of emetteurs">
+                    <tr>
+                        <td>{{ emetteur.idE }}</td>
+                        <td>{{ emetteur.nomE }}</td>
+                        <td>{{ emetteur.prenomE }}</td>
+                        <td>{{ emetteur.telephone }}</td>
+                        <td>{{ emetteur.cni }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
